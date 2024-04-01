@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.CContainer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(217, 10, 10, 0.684);
+    z-index: 9999;
+}
+.Cart-Box{
+    position: fixed;
+    border: 3px solid white;
+    background: white(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 370px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+/* .Cart-Array{
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(98, 0, 151);
+    overflow: scroll;
+    border-radius: 10px;
+}
+.Cart-Array::-webkit-scrollbar{display: none;}
+.CartItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    background: rgba(41, 41, 41, 0.734);
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.TotalAmount{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    background: #90649c;
+    border-radius: 10px;
+    font-weight: 400;
+    color: white;
+}
+.Cart-Btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+.BTN{
+    width: 80px;
+    height: 30px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    border: 3px solid white;
+}
+.BTN1{
+    width: 40px;
+    height: 30px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    border: 3px solid white;
+}
+.MAX{
+    background: rgb(0, 119, 101);
+}
+.MIN{
+    background: rgb(32, 18, 61);
+}
+.CNCL{
+    background: rgb(68, 0, 124);
+}
+.ORDR{
+    background: rgb(84, 0, 92);
+}
+
+@media screen and (max-width: 768px){
+    .Cart-Box{
+        width: 70vw;
+    }
+    .CartItem{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .TA{
+        font-size: 14px;
+    }
+} */
