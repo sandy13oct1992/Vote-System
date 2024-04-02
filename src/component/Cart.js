@@ -5,11 +5,11 @@ import './Cart.css';
 import CartContext from '../store/CartContext';
 
 const monitorName = ["Suresh", "Deepank", "Abhik"];
-
+let id;
 const Cart = props => {
-    const [monitorname, setMonitorName] = useState();
+    const [monitorname, setMonitorName] = useState('');
     const [votername, setVoterName1] = useState();
-    const [allVoter, setAllVoter] = useState([]);
+    
 
     const {setVoterName} = useContext(CartContext);
     const {setMonitor} = useContext(CartContext);
@@ -25,14 +25,17 @@ const Cart = props => {
 
     const HandleSubmit = (e) => {
         e.preventDefault();
-        const newVoter = {
-            votername,
+        
+        const voterObj = {
+            votername:votername,
+            monitorname:monitorname,
             id:new Date().getTime(),
         }
-    
-        setAllVoter([...allVoter,newVoter]);
         
-        setVoterName(allVoter);
+    
+        // setAllVoter([...allVoter,newVoter]);
+        
+        setVoterName(voterObj);
         setMonitor(monitorname)
         props.onClose();
     

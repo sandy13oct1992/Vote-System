@@ -19,7 +19,7 @@ import CartContext from "./CartContext";
 
 const CartProvider = (props) => {
     //  const [cartState, setDispatchAction] = useReducer(cartReducer, defaultCartState);
-     const [vName, setVoterName]=useState('')
+     const [vName, setVoterName]=useState('');
      const [mName, setMonitor] = useState('')
     
     // const addVoteHandler = (data) => {
