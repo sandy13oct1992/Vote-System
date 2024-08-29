@@ -1,124 +1,36 @@
-import React, { useState } from 'react';
+const addToCartHandler = async(item) =>{
+    submitCartHandler(item);
+    //  const response = await axios.post('https://e-commerce3-30722-default-rtdb.firebaseio.com/cart.json',
+    //   item
+    //  )
+    
+   }
+  //  const res=async() =>{ 
+  //   const resp2=  await axios.get('https://e-commerce3-30722-default-rtdb.firebaseio.com/cart.json')
+  //   let products =Object.values(resp2.data)
+  //   console.log(products,"from line no. 85");
+  //   const productsKeys =Object.keys(resp2.data)
+  //   console.log(productsKeys, "from line no. 87");
 
-const EComerceSite1 = () => {
-  const categories = ['Electronics', 'Food', 'Skincare'];
-
-  const [category, setCategory] = useState('');
-  const [productName, setProductName] = useState('');
-  const [price, setPrice] = useState('');
-  const [products, setProducts] = useState([]);
-
-  console.log("executing");
-  const handleCategoryChange = (e) => {
-    setCategory(e.target.value);
-  };
-
-  const handleProductNameChange = (e) => {
-    setProductName(e.target.value);
-  };
-
-  const handlePriceChange = (e) => {
-    setPrice(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Create a new product object
-    const newProduct = {
-      category,
-      productName,
-      price,
-      id: new Date().getTime(),
-    };
-
-    // Update the products state with the new product
-    setProducts([...products, newProduct]);
-
-    // Reset the form fields
-    setCategory('');
-    setProductName('');
-    setPrice('');
-  };
-
-  const handleDelete = (productId) => {
-    // Filter out the product with the given ID
-    const updatedProducts = products.filter((product) => product.id !== productId);
-
-    // Update the products state without the deleted product
-    setProducts(updatedProducts);
-  };
-
-  const handleEdit = (productId) => {
-    // Find the product with the given ID
-    const productToEdit = products.find((product) => product.id === productId);
-
-    // Set the form fields with the values from the product to edit
-    setCategory(productToEdit.category);
-    setProductName(productToEdit.productName);
-    setPrice(productToEdit.price);
-
-    // Delete the product from the list
-    handleDelete(productId);
-  };
-
-  return (
-    <div>
-      <h2>Product Form</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="category">Category:</label>
-          <select id="category" value={category} onChange={handleCategoryChange} required>
-            <option value="">Select Category</option>
-            {categories.map((category) => (
-              <option key={category} value={category}>
-                {category}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div>
-          <label htmlFor="productName">Product Name:</label>
-          <input
-            type="text"
-            id="productName"
-            value={productName}
-            onChange={handleProductNameChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="price">Price:</label>
-          <input
-            type="number"
-            id="price"
-            value={price}
-            onChange={handlePriceChange}
-            required
-          />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-
-      <h2>Products</h2>
-      {categories.map((category1) => (
-        <div key={category1}>
-          <h3>{category1}</h3>
-          <ul>
-            {products
-              .filter((product) => product.category === category1)
-              .map((product) => (
-                <li key={product.id}>
-                  {product.productName} - ${product.price}
-                  <button onClick={() => handleEdit(product.id)}>Edit</button>
-                  <button onClick={() => handleDelete(product.id)}>Delete</button>
-                </li>
-              ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default EComerceSite1;
+  //   products=products.map((pdata,index) =>{
+  //     pdata.id = productsKeys[index];
+  //     return pdata;
+  //  })
+  //  console.log(products ,"updated cart data");
+  //   restoreCartHandler(products);
+  // //   const resp3=await resp2.json();
+  // console.log(resp2, "from line no. 88");
+  // // }
+  // // res();
+  //   }
+   useEffect(() =>{
+  //   const res=async() =>{ 
+  //   const resp2=  await axios.get('https://react-http-6b09e-default-rtdb.firebaseio.com/cart.json')
+  //   //  submitCartHandler(resp2)
+  //   const resp3=await resp2.json();
+  // console.log(resp3, "from line no. 82");
+  // // }
+  res();
+    // }
+},[])
+   console.log(FormData);

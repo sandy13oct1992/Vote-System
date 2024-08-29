@@ -1,0 +1,124 @@
+/* .monitor {
+    margin-top: 20px;
+  }
+  
+  .voter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    /* gap: 8px; /* Adjust gap between elements for two-letter space */
+  /* } */
+  
+  /* .voter-name {
+    margin-right: 8px; /* Add space between name and email */
+  /* } */ 
+  
+  /* .voter-email {
+    margin-right: 8px; /* Add space between email and delete button */
+  /* } */ 
+  
+  /* .delete-button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  } */
+  
+  /* .delete-button:hover {
+    background-color: darkred;
+  } */
+  
+  /* Frontpage.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.monitor {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.monitor h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.voter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.voter-name,
+.voter-email {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.delete-button,
+.edit-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.edit-button {
+  background-color: orange;
+}
+
+.edit-button:hover {
+  background-color: darkorange;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
